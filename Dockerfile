@@ -42,6 +42,3 @@ RUN bazelisk build //:compiler_unshaded_deploy.jar
 COPY 0001-assumeClosuresOnlyCaptureReferences.patch /app
 RUN patch src/com/google/javascript/jscomp/CompilationLevel.java /app/0001-assumeClosuresOnlyCaptureReferences.patch
 RUN bazelisk build //:compiler_unshaded_deploy.jar
-
-RUN java -jar bazel-bin/compiler_unshaded_deploy.jar -O ADVANCED \
-    --js /app/in.js --js_output_file /app/out-patched.js

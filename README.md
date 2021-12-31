@@ -8,3 +8,13 @@ and
 
 Releases are named as: `closure-YYYY-MM-DD-COMMIT`, where the commit
 is from the original closure-compiler repo.
+
+## How to build
+
+Build the jar:
+
+    $ docker image build . -t krk/closure-purs
+
+Copy the jar:
+
+    $ docker run --rm -v`pwd`:`pwd` krk/closure-purs cp bazel-bin/compiler_unshaded_deploy.jar `pwd`/
