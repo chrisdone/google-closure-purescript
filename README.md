@@ -9,6 +9,12 @@ and
 Releases are named as: `closure-YYYY-MM-DD-COMMIT`, where the commit
 is from the original closure-compiler repo.
 
+## How to use
+
+Pull a .jar from the `releases/` dir. Then run:
+
+    java -jar closure.jar -O ADVANCED --js in.js --js_output_file out.js
+
 ## How to build
 
 Build the jar:
