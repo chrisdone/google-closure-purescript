@@ -1,5 +1,9 @@
 This repo contains a patched Google Closure that will uncurry closures
-in PureScript.
+in PureScript. See
+[here](https://github.com/google/closure-compiler/issues/3713) for
+more context.
+
+## Intro
 
 Thanks to Kerem Kat for
 [the pointer](https://github.com/google/closure-compiler/issues/3713#issuecomment-999170951)
