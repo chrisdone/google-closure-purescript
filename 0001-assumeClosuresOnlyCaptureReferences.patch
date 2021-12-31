@@ -1,0 +1,13 @@
+diff --git a/src/com/google/javascript/jscomp/CompilationLevel.java b/src/com/google/javascript/jscomp/CompilationLevel.java
+index 02ec99aee..0211a6cc1 100644
+--- a/src/com/google/javascript/jscomp/CompilationLevel.java
++++ b/src/com/google/javascript/jscomp/CompilationLevel.java
+@@ -181,7 +181,7 @@ public enum CompilationLevel {
+     options.setSmartNameRemoval(true);
+     options.setInlineConstantVars(true);
+     options.setInlineFunctions(Reach.ALL);
+-    options.setAssumeClosuresOnlyCaptureReferences(false);
++    options.setAssumeClosuresOnlyCaptureReferences(true);
+     options.setInlineVariables(Reach.ALL);
+     options.setComputeFunctionSideEffects(true);
+     options.setAssumeStrictThis(true);
